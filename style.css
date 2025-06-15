@@ -35,12 +35,17 @@ h1 {
     margin: 16px 0 24px 0;
 }
 
+figure {
+    width: 40%;
+}
+
 button {
     background-color: #05c7cf;
     color: rgb(0, 0, 0);
     border: none;
     padding: 8px 16px;
     font-size: 24px;
+    margin-bottom: 32px;
 }
 
 a {
@@ -68,16 +73,14 @@ li {
 }
 
 /* ABOUT  */
-
-#about,
-#discord,
-#contact,
+#manager,
+#contact
 footer {
     padding: 48px 0;
     
 }
 
-#about {
+#manager {
     background-color: #f8ffdc;
 }
 
@@ -93,7 +96,7 @@ h2 {
     align-items: center;
 }
 
-.about__img--wrapper 
+.manager__img--wrapper 
 {
     width: 40%;
     padding: 0 24px;
@@ -131,6 +134,7 @@ form {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    padding: 0 24px;
 }
 
 input, textarea {
@@ -142,7 +146,7 @@ input, textarea {
 /* FOOTER */
 
 footer {
-    background-color: #aaf5ff;
+    background-color: #b7ecf3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -159,4 +163,61 @@ footer {
 
 .footer__link {
     padding: 0 16px;
+}
+
+
+@media (max-width: 728px)
+{
+    .row {
+        flex-direction: column;
+    }
+
+    .home__description {
+        margin-bottom: 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home__description--button {
+        max-width: 240px;
+        margin-bottom: 8px;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 60px;
+    }
+
+    .subheader {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .section__description {
+        flex-direction: column;
+    }
+
+    .section__description--wrapper {
+        width: 100%;
+    }
+
+    .manager__img--wrapper {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+    figure {
+        width:50%;
+    }
+
+    footer {
+        padding: 48px 24px;
+    }
+
+
 }
